@@ -17,9 +17,13 @@ spec:
   externalAccess:
     enabled: true
   keycloakDeploymentSpec:
+    experimental:
+      env:
+        - name: JAVA_OPTS
+          value: '-Djava.net.preferIPv4Stack=false'
     imagePullPolicy: Always
   postgresDeploymentSpec:
     imagePullPolicy: Always
-  instances: 2
+  instances: 0
 # we set a minimum of 2 pods for the HA
-  storageClassName: gp2
+  storageClassName: managed-nfs-storage

@@ -8,4 +8,4 @@ resources:
 - 01_rhsso-operator_resourcegroups.yaml
 - 02_rhsso-operator.yaml
 - 03_deploy_rhsso-dev.yaml
-- 04_rh-sso-hpa.yaml
+# - 04_rh-sso-hpa.yaml
